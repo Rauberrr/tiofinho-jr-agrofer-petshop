@@ -9,6 +9,31 @@
     a.href = waLink(a.dataset.wa);
   });
 
+  /* ---------- Opções clicáveis: acesso rápido ao assunto ---------- */
+  document.querySelectorAll('.opts').forEach((group) => {
+    const cta = group.parentElement.querySelector('.dept-cta');
+    if (!cta) return;
+    const label = cta.querySelector('.cta-label');
+    const def = { text: label.textContent, msg: cta.dataset.wa };
+    const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+    const opts = group.querySelectorAll('.opt');
+    opts.forEach((btn) => {
+      btn.setAttribute('aria-pressed', 'false');
+      btn.addEventListener('click', () => {
+        const on = btn.getAttribute('aria-pressed') !== 'true';
+        opts.forEach((b) => b.setAttribute('aria-pressed', 'false'));
+        btn.setAttribute('aria-pressed', String(on));
+        const x = btn.dataset.x;
+        label.textContent = on ? cap(group.dataset.label.replace('{x}', x)) : def.text;
+        cta.href = waLink(on ? group.dataset.msg.replace('{x}', x) : def.msg);
+        cta.classList.toggle('is-picked', on);
+        cta.classList.remove('is-pop');
+        void cta.offsetWidth;
+        cta.classList.add('is-pop');
+      });
+    });
+  });
+
   /* ---------- Header / menu ---------- */
   const header = document.querySelector('.header');
   const burger = document.getElementById('burger');
@@ -161,7 +186,7 @@
   const placeholders = {
     'Pet Shop': 'Ex.: Ração PremieR adulto 15 kg, areia para gato…',
     'Agropecuária': 'Ex.: Formicida para horta, adubo, ração para galinhas…',
-    'Ferragem': 'Ex.: Churrasqueira de latão, mangueira 20 m…',
+    'Ferragem': 'Ex.: Churrasqueira de chão, mangueira 20 m…',
     'Remédios': 'Ex.: Simparic para cão de 10 a 20 kg, vermífugo…',
   };
 

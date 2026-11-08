@@ -11,7 +11,7 @@
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="Tiófinho Jr Agrofer & Petshop — Gramado/RS">
+  <meta property="og:title" content="Tiófinho Jr Agrofer & Petshop · Gramado/RS">
   <meta property="og:description" content="Banho e tosa, pet shop, agropecuária e ferragem num só lugar. Desde 2007 no Bairro Piratini.">
   <meta property="og:image" content="assets/img/fachada.jpg">
 
@@ -85,7 +85,7 @@
 <!-- ============ HEADER ============ -->
 <header class="header" id="topo">
   <div class="container header__inner">
-    <a href="#topo" class="brand" aria-label="Tiófinho Jr — início">
+    <a href="#topo" class="brand" aria-label="Tiófinho Jr, início">
       <img src="assets/img/emblema-azul.png" alt="" width="54" height="40" class="brand__icon">
       <span class="brand__text">
         <strong>Tiófinho Jr</strong>
@@ -121,7 +121,7 @@
     <div class="hero__copy">
       <span class="pill reveal"><svg class="ico"><use href="#i-pin"/></svg> Bairro Piratini · Gramado/RS · desde 2007</span>
       <h1 class="reveal" style="--d:.08s">Tudo para o seu <span class="rotator" aria-live="polite"><span class="rotator__word is-on">pet</span><span class="rotator__word">campo</span><span class="rotator__word">jardim</span><span class="rotator__word">churrasco</span></span><br>num só lugar.</h1>
-      <p class="hero__lead reveal" style="--d:.16s">Banho e tosa caprichado, rações das melhores marcas, produtos de agropecuária e ferragem — com o <strong>atendimento de família</strong> e o <strong>preço justo</strong> que os nossos clientes elogiam.</p>
+      <p class="hero__lead reveal" style="--d:.16s">Banho e tosa caprichado, rações das melhores marcas, produtos de agropecuária e ferragem, com o <strong>atendimento de família</strong> e o <strong>preço justo</strong> que os nossos clientes elogiam.</p>
       <div class="hero__ctas reveal" style="--d:.24s">
         <a class="btn btn--yellow btn--lg" data-wa="Olá! Vim pelo site e gostaria de fazer um pedido 😊" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-whats"/></svg> Chamar no WhatsApp</a>
         <a class="btn btn--ghost btn--lg" href="#banho-e-tosa">Ver o que temos <svg class="ico"><use href="#i-arrow"/></svg></a>
@@ -173,7 +173,7 @@
 <section class="stats container">
   <div class="stat reveal"><strong><span data-count="19">0</span>+</strong><span>anos de história no bairro</span></div>
   <div class="stat reveal" style="--d:.08s"><strong><span data-count="4">0</span></strong><span>setores numa só loja</span></div>
-  <div class="stat reveal" style="--d:.16s"><strong>Seg–Sáb</strong><span>abertos para você</span></div>
+  <div class="stat reveal" style="--d:.16s"><strong>Seg a Sáb</strong><span>abertos para você</span></div>
   <div class="stat reveal" style="--d:.24s"><strong><svg class="ico"><use href="#i-truck"/></svg></strong><span>entrega em Gramado</span></div>
 </section>
 
@@ -256,15 +256,17 @@
     <div class="dept__copy">
       <span class="eyebrow reveal">🐶 Banho e Tosa</span>
       <h2 class="reveal">Seu cão volta para casa <em>limpinho, fofinho e cheiroso</em>.</h2>
-      <p class="reveal">Cuidado com carinho, paciência e produtos de qualidade. A gente trata cada pet como se fosse da família — e os tutores sentem a diferença no primeiro abraço.</p>
-      <ul class="checks reveal">
-        <li><svg class="ico"><use href="#i-check"/></svg> Banho completo com secagem</li>
-        <li><svg class="ico"><use href="#i-check"/></svg> Tosa higiênica ou na tesoura</li>
-        <li><svg class="ico"><use href="#i-check"/></svg> Para cães de todos os portes</li>
-        <li><svg class="ico"><use href="#i-check"/></svg> Agendamento rápido pelo WhatsApp</li>
-      </ul>
-      <blockquote class="mini-quote reveal">“Amei o banho que deram na minha Babi.” <cite>— Elayne, cliente</cite></blockquote>
-      <a class="btn btn--blue reveal" data-wa="Olá! Vim pelo site e gostaria de agendar um banho e tosa para o meu cachorro 🐶" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-whats"/></svg> Agendar banho e tosa</a>
+      <p class="reveal">Cuidado com carinho, paciência e produtos de qualidade. A gente trata cada pet como se fosse da família, e os tutores sentem a diferença no primeiro abraço.</p>
+      <div class="opts reveal" data-label="Agendar {x}" data-msg="Olá! Vim pelo site e gostaria de agendar {x} para o meu cachorro 🐶">
+        <p class="opts__hint">Toque no serviço e fale direto com a gente 👇</p>
+        <button type="button" class="opt" data-x="banho completo">Banho completo</button>
+        <button type="button" class="opt" data-x="banho e tosa">Banho e tosa</button>
+        <button type="button" class="opt" data-x="tosa higiênica">Tosa higiênica</button>
+        <button type="button" class="opt" data-x="tosa na tesoura">Tosa na tesoura</button>
+      </div>
+      <p class="note reveal">Para cães de todos os portes, com agendamento rápido pelo WhatsApp.</p>
+      <blockquote class="mini-quote reveal">“Amei o banho que deram na minha Babi.” <cite>Elayne, cliente</cite></blockquote>
+      <a class="btn btn--blue reveal dept-cta" data-wa="Olá! Vim pelo site e gostaria de agendar um banho e tosa para o meu cachorro 🐶" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-whats"/></svg> <span class="cta-label">Agendar banho e tosa</span></a>
     </div>
   </div>
 </section>
@@ -320,11 +322,19 @@
     <div class="dept__copy">
       <span class="eyebrow reveal">🐱 Pet Shop</span>
       <h2 class="reveal">Ração boa, brinquedos e remédios para <em>cães e gatos</em>.</h2>
-      <p class="reveal">Das rações premium aos petiscos, areias, caminhas, coleiras e antipulgas. Não sabe qual escolher? A gente te ajuda a achar o ideal para o seu bichinho — sem empurrar o mais caro.</p>
-      <div class="tags reveal">
-        <span>Rações premium</span><span>Petiscos</span><span>Areia para gatos</span><span>Antipulgas e vermífugos</span><span>Camas e casinhas</span><span>Coleiras e guias</span><span>Brinquedos</span><span>Remédios veterinários</span>
+      <p class="reveal">Das rações premium aos petiscos, areias, caminhas, coleiras e antipulgas. Não sabe qual escolher? A gente te ajuda a achar o ideal para o seu bichinho, sem empurrar o mais caro.</p>
+      <div class="opts reveal" data-label="Consultar {x}" data-msg="Olá! Vim pelo site e gostaria de saber sobre {x} para o meu pet 🐱">
+        <p class="opts__hint">Toque no que você procura e fale direto com a gente 👇</p>
+        <button type="button" class="opt" data-x="rações premium">Rações premium</button>
+        <button type="button" class="opt" data-x="petiscos">Petiscos</button>
+        <button type="button" class="opt" data-x="areia para gatos">Areia para gatos</button>
+        <button type="button" class="opt" data-x="antipulgas e vermífugos">Antipulgas e vermífugos</button>
+        <button type="button" class="opt" data-x="camas e casinhas">Camas e casinhas</button>
+        <button type="button" class="opt" data-x="coleiras e guias">Coleiras e guias</button>
+        <button type="button" class="opt" data-x="brinquedos">Brinquedos</button>
+        <button type="button" class="opt" data-x="remédios veterinários">Remédios veterinários</button>
       </div>
-      <a class="btn btn--blue reveal" data-wa="Olá! Vim pelo site e gostaria de saber sobre rações e produtos para o meu pet 🐱" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-whats"/></svg> Consultar preço de ração</a>
+      <a class="btn btn--blue reveal dept-cta" data-wa="Olá! Vim pelo site e gostaria de saber sobre rações e produtos para o meu pet 🐱" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-whats"/></svg> <span class="cta-label">Consultar preço de ração</span></a>
     </div>
   </div>
 </section>
@@ -383,13 +393,17 @@
       <span class="eyebrow reveal">👨‍🌾 Agropecuária</span>
       <h2 class="reveal">Para a horta, o jardim, a criação e o campo.</h2>
       <p class="reveal">Formiga acabando com as suas plantas? Tem a solução certa aqui. Também temos rações para aves, gado e cavalos, sementes, adubos e tudo que a lida do dia a dia pede.</p>
-      <ul class="checks reveal">
-        <li><svg class="ico"><use href="#i-check"/></svg> Formicidas e controle de pragas</li>
-        <li><svg class="ico"><use href="#i-check"/></svg> Sementes, adubos e terra</li>
-        <li><svg class="ico"><use href="#i-check"/></svg> Rações para aves, gado e cavalos</li>
-        <li><svg class="ico"><use href="#i-check"/></svg> Medicamentos veterinários para criação</li>
-      </ul>
-      <a class="btn btn--blue reveal" data-wa="Olá! Vim pelo site e gostaria de saber sobre produtos de agropecuária 🌱" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-whats"/></svg> Falar sobre agropecuária</a>
+      <div class="opts reveal" data-label="Consultar {x}" data-msg="Olá! Vim pelo site e gostaria de saber sobre {x} 🌱">
+        <p class="opts__hint">Toque no que você procura e fale direto com a gente 👇</p>
+        <button type="button" class="opt" data-x="formicidas">Formicidas</button>
+        <button type="button" class="opt" data-x="controle de pragas">Controle de pragas</button>
+        <button type="button" class="opt" data-x="sementes">Sementes</button>
+        <button type="button" class="opt" data-x="adubos e terra">Adubos e terra</button>
+        <button type="button" class="opt" data-x="rações para aves">Rações para aves</button>
+        <button type="button" class="opt" data-x="rações para gado e cavalos">Rações para gado e cavalos</button>
+        <button type="button" class="opt" data-x="medicamentos para criação">Medicamentos para criação</button>
+      </div>
+      <a class="btn btn--blue reveal dept-cta" data-wa="Olá! Vim pelo site e gostaria de saber sobre produtos de agropecuária 🌱" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-whats"/></svg> <span class="cta-label">Falar sobre agropecuária</span></a>
     </div>
   </div>
 </section>
@@ -398,7 +412,7 @@
 <section class="dept dept--iron" id="ferragem">
   <div class="container dept__grid dept__grid--rev">
     <div class="dept__art reveal">
-      <svg class="art art--grill" viewBox="0 0 320 320" role="img" aria-label="Churrasqueira de chão feita de latão com fogo aceso">
+      <svg class="art art--grill" viewBox="0 0 320 320" role="img" aria-label="Churrasqueira de chão com fogo aceso">
         <ellipse cx="160" cy="300" rx="110" ry="9" fill="#0e1e5c" opacity=".12"/>
         <!-- fumaça -->
         <g class="smoke" fill="#b9c3dd">
@@ -446,12 +460,18 @@
     </div>
     <div class="dept__copy">
       <span class="eyebrow reveal">🛠️ Ferragem</span>
-      <h2 class="reveal">Da churrasqueira de latão à ferramenta que faltava.</h2>
-      <p class="reveal">Churrasqueiras de chão feitas de latão, ferramentas, utilidades para casa e para o campo. Aquele item que você precisa agora, sem ter que ir até o centro.</p>
-      <div class="tags reveal">
-        <span>Churrasqueiras de latão</span><span>Ferramentas</span><span>Arames e telas</span><span>Mangueiras</span><span>Jardinagem</span><span>Utilidades</span>
+      <h2 class="reveal">Da churrasqueira à ferramenta que faltava.</h2>
+      <p class="reveal">Churrasqueiras de chão, ferramentas, utilidades para casa e para o campo. Aquele item que você precisa agora, sem ter que ir até o centro.</p>
+      <div class="opts reveal" data-label="Consultar {x}" data-msg="Olá! Vim pelo site e gostaria de saber sobre {x} 🛠️">
+        <p class="opts__hint">Toque no que você procura e fale direto com a gente 👇</p>
+        <button type="button" class="opt" data-x="churrasqueiras">Churrasqueiras</button>
+        <button type="button" class="opt" data-x="ferramentas">Ferramentas</button>
+        <button type="button" class="opt" data-x="arames e telas">Arames e telas</button>
+        <button type="button" class="opt" data-x="mangueiras">Mangueiras</button>
+        <button type="button" class="opt" data-x="jardinagem">Jardinagem</button>
+        <button type="button" class="opt" data-x="utilidades">Utilidades</button>
       </div>
-      <a class="btn btn--blue reveal" data-wa="Olá! Vim pelo site e gostaria de saber sobre ferragem e churrasqueiras 🔥" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-whats"/></svg> Ver churrasqueiras e ferragem</a>
+      <a class="btn btn--blue reveal dept-cta" data-wa="Olá! Vim pelo site e gostaria de saber sobre ferragem e churrasqueiras 🔥" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-whats"/></svg> <span class="cta-label">Ver churrasqueiras e ferragem</span></a>
     </div>
   </div>
 </section>
@@ -611,12 +631,12 @@
       <div class="hours__head"><svg class="ico"><use href="#i-clock"/></svg> Horário de funcionamento <span class="badge" id="status-badge"></span></div>
       <table>
         <tbody id="hours-table">
-          <tr data-day="1"><th>Segunda</th><td>08:00–11:50 · 13:30–18:15</td></tr>
-          <tr data-day="2"><th>Terça</th><td>08:00–11:50 · 13:30–18:15</td></tr>
-          <tr data-day="3"><th>Quarta</th><td>08:00–11:50 · 13:30–18:15</td></tr>
-          <tr data-day="4"><th>Quinta</th><td>08:00–11:50 · 13:30–18:15</td></tr>
-          <tr data-day="5"><th>Sexta</th><td>08:00–11:50 · 13:30–18:15</td></tr>
-          <tr data-day="6"><th>Sábado</th><td>08:00–11:50</td></tr>
+          <tr data-day="1"><th>Segunda</th><td>08:00 às 11:50 · 13:30 às 18:15</td></tr>
+          <tr data-day="2"><th>Terça</th><td>08:00 às 11:50 · 13:30 às 18:15</td></tr>
+          <tr data-day="3"><th>Quarta</th><td>08:00 às 11:50 · 13:30 às 18:15</td></tr>
+          <tr data-day="4"><th>Quinta</th><td>08:00 às 11:50 · 13:30 às 18:15</td></tr>
+          <tr data-day="5"><th>Sexta</th><td>08:00 às 11:50 · 13:30 às 18:15</td></tr>
+          <tr data-day="6"><th>Sábado</th><td>08:00 às 11:50</td></tr>
           <tr data-day="0"><th>Domingo</th><td>Fechado</td></tr>
         </tbody>
       </table>
@@ -624,7 +644,7 @@
     <a class="btn btn--blue" href="https://www.google.com/maps/dir/?api=1&destination=Rua+Get%C3%BAlio+Vargas+800+Piratini+Gramado+RS" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg> Como chegar</a>
   </div>
   <div class="visit__map reveal" style="--d:.1s">
-    <iframe title="Mapa: Rua Getúlio Vargas, 800 — Gramado/RS" src="https://maps.google.com/maps?q=Rua%20Get%C3%BAlio%20Vargas%2C%20800%2C%20Piratini%2C%20Gramado%20-%20RS&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    <iframe title="Mapa: Rua Getúlio Vargas, 800, Gramado/RS" src="https://maps.google.com/maps?q=Rua%20Get%C3%BAlio%20Vargas%2C%20800%2C%20Piratini%2C%20Gramado%20-%20RS&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
   </div>
 </section>
 
@@ -634,7 +654,7 @@
 <footer class="footer">
   <div class="container footer__grid">
     <div>
-      <img src="assets/img/logo-amarelo.png" alt="Tiófinho Jr Agrofer e Petshop — desde 2007" width="200" height="162" loading="lazy" class="footer__logo">
+      <img src="assets/img/logo-amarelo.png" alt="Tiófinho Jr Agrofer e Petshop, desde 2007" width="200" height="162" loading="lazy" class="footer__logo">
     </div>
     <div>
       <h4>Setores</h4>
